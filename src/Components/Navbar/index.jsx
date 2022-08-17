@@ -13,14 +13,14 @@ const rowStyle = {
     alignItems: "center"
 };
 
-const asideColumns = {
+const asideColumnsStyle = {
     display: "flex",
     flexDirection: "row",
     padding: "1rem",
     columnGap: "2rem"
 }
 
-const navLink = {
+const navLinkStyle = {
     textDecoration: "none",
     color: "navy",
     fontFamily: "'Gruppo'",
@@ -33,12 +33,12 @@ const NavBar = () => {
         <Nav>
             <Container fluid>
                 <Row style={rowStyle}>
-                    <Col style={asideColumns}>
+                    <Col style={asideColumnsStyle}>
                         <Nav.Item>
-                            <Nav.Link style={navLink} href="#">About</Nav.Link>
+                            <Nav.Link style={navLinkStyle} href="#">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link style={navLink} href="#">Service</Nav.Link>
+                            <Nav.Link style={navLinkStyle} href="#">Service</Nav.Link>
                         </Nav.Item>
                     </Col>
                     <Col className="CenterColumn">
@@ -48,10 +48,10 @@ const NavBar = () => {
                     </Col>
                     <Col style={asideColumns}>
                         <Nav.Item>
-                            <Nav.Link style={navLink} href="#">Cart</Nav.Link>
+                            <Nav.Link style={navLinkStyle} href="#">Cart</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link style={navLink} href="#">Sign In</Nav.Link>
+                            <Nav.Link style={navLinkStyle} href="#">Sign In</Nav.Link>
                         </Nav.Item>
                     </Col>
                 </Row>
