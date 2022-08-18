@@ -2,11 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import skai from 'C:/Users/bpont/Documents/Coderhouse/M3-React Js/Ecommerce-BrunoPontiz/skai-app/src/multimedia/skai.png';
-import 'C:/Users/bpont/Documents/Coderhouse/M3-React Js/Ecommerce-BrunoPontiz/skai-app/src/App.css';
+import skai_3 from '../../multimedia/skai_3.png';
+import '../../App.css';
+import CartWidget from './CartWidget.jsx';
 
 const rowStyle = {
-    border: "1px solid black",
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
@@ -17,16 +17,25 @@ const asideColumnsStyle = {
     display: "flex",
     flexDirection: "row",
     padding: "1rem",
-    columnGap: "2rem"
-}
+    columnGap: "2rem",
+    alignItems: "center"
+};
 
 const navLinkStyle = {
     textDecoration: "none",
     color: "navy",
+    fontSize: "small",
     fontFamily: "'Gruppo'",
     fontWeight: "bold",
     letterSpacing: "2px",
-}
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    "& hover": {
+        color: "red"
+    }
+};
 
 const NavBar = () => {
     return (
@@ -38,17 +47,17 @@ const NavBar = () => {
                             <Nav.Link style={navLinkStyle} href="#">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link style={navLinkStyle} href="#">Service</Nav.Link>
+                            <Nav.Link style={navLinkStyle} href="#">Services</Nav.Link>
                         </Nav.Item>
                     </Col>
-                    <Col className="CenterColumn">
+                    <Col>
                         <Nav.Item>
-                            <Nav.Link href="#"><img src={skai} width="100px" alt="Skai industries logo"/></Nav.Link>
+                            <Nav.Link href="../../App.jsx"><img src={skai_3} style={{maxWidth: "75px", padding: "0.25rem"}} alt="Skai industries logo"/></Nav.Link>
                         </Nav.Item>
                     </Col>
-                    <Col style={asideColumns}>
+                    <Col style={asideColumnsStyle}>
                         <Nav.Item>
-                            <Nav.Link style={navLinkStyle} href="#">Cart</Nav.Link>
+                            <Nav.Link style={navLinkStyle} href="#">Cart<CartWidget /></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link style={navLinkStyle} href="#">Sign In</Nav.Link>
@@ -59,6 +68,5 @@ const NavBar = () => {
         </Nav>
     )
 }
-
 
 export default NavBar;

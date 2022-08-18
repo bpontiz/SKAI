@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './Components/Navbar';
+import NavBar from './Components/Navbar/NavBar.jsx';
+import ItemListContainer from './Containers/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <ItemListContainer greeting="SKAI says: "/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
