@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer greeting="SKAI says: "/>
+      <ItemListContainer greeting=""/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
