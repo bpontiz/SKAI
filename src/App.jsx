@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './Components/Navbar/NavBar.jsx';
+import NavBar from './Components/NavBar/NavBar.jsx';
 import ItemListContainer from './Containers/ItemListContainer';
 
 function App() {

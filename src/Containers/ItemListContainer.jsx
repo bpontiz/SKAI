@@ -1,16 +1,5 @@
 import '../App.css';
-
-const itemListContainerStyle = {
-    right: "0",
-    margin: "0 auto",
-    fontFamily: "Gruppo",
-    fontWeight: "600",
-    fontSize: "small",
-    width: "0",
-    overflow: "hidden",
-    whiteSpace: "nowrap",
-    animation: "typewriter 10s steps(500) 0.5s 1 forwards"
-};
+import './ItemListContainer.css';
 
 const ItemListContainer = (props) => {
     let someGreetings = [
@@ -23,7 +12,7 @@ const ItemListContainer = (props) => {
     ];
     let randomGreeting = someGreetings[Math.floor(someGreetings.length * Math.random())];
     return (
-        <p style={itemListContainerStyle}>{props.greeting}{randomGreeting}</p>
+        <p className="itemListContainerStyle">{props.greeting}{randomGreeting}</p>
     );
 }
 

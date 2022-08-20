@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rowStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.asideColumnsStyle {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.navLinkStyle {
+    text-decoration: none;
+    color: navy;
+    font-size: small;
+    font-family: 'Gruppo';
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
