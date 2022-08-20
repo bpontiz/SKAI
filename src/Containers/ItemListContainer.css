@@ -14,4 +14,18 @@
     overflow: hidden;
     white-space: nowrap;
     animation: typewriter 10s steps(500) 0.5s 1 forwards;
+    animation-delay: 1.25s;
+}
+
+.divGreetingStyle {
+    min-width: 414px;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }

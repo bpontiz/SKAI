@@ -5,13 +5,13 @@ import Col from 'react-bootstrap/Col';
 import skai_3 from '../../multimedia/skai_3.png';
 import '../../App.css';
 import './NavBar.css';
-import CartWidget from './CartWidget.jsx';
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
     return (
-        <Nav>
-            <Container fluid>
-                <Row className="rowStyle">
+        <Nav className="navStyle">
+            <Container fluid expand={'sm'}>
+                <Row className="rowStyle" X-Small={12}>
                     <Col className="asideColumnsStyle">
                         <Nav.Item>
                             <Nav.Link className="navLinkStyle" href="#">About</Nav.Link>
