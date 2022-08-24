@@ -11,9 +11,8 @@ const ItemListContainer = (props) => {
         "We look forward to serve you"
     ];
     let randomGreeting = someGreetings[Math.floor(someGreetings.length * Math.random())];
-    return (
+    return <>
         <div className="divGreetingStyle"><p className="itemListContainerStyle">{props.greeting}{randomGreeting}</p></div>
-    );
+    </>
 }
-
 export default ItemListContainer;

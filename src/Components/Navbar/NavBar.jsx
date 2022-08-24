@@ -27,7 +27,7 @@ const NavBar = () => {
                     </Col>
                     <Col className="asideColumnsStyle">
                         <Nav.Item>
-                            <Nav.Link className="navLinkStyle" href="#">Cart<CartWidget /></Nav.Link>
+                            <Nav.Link className="navLinkStyle" href="#">Cart<CartWidget />0</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link className="navLinkStyle" href="#">Sign In</Nav.Link>
