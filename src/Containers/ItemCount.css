@@ -1,3 +1,7 @@
+/* Add to cart button color style for Fin or Economics AI
+background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%); 
+border: rgb(194, 126, 0) 1px solid; */
+
 * {
     padding: 0;
     margin: 0;
@@ -32,7 +36,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: auto;
     text-align: center;
     min-width: 140px;
-    border: #BBBBBB 1px solid;
+    border: 1px solid rgb(1, 143, 131);
     border-radius: 5px;
     font-family: 'Gruppo';
     font-weight: 800;
@@ -41,14 +45,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .inputNumberStyle:focus {
-    outline: 0.25px solid rgb(194, 126, 0);
+    outline: 0.25px solid rgb(1, 143, 131);
 }
 
 .changeNumberStyle {
     padding: 0.1rem 0;
     margin: 1px;
     cursor: pointer;
-    color: rgb(194, 126, 0);
+    color: rgb(1, 143, 131);
     font-size: 15px;
     font-weight: 600;
     border: none;
@@ -56,12 +60,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .changeNumberStyle:hover {
-    color: #FF512F;
+    color: rgb(35, 180, 190);
 }
 
 .changeNumberStyle:active {
     transform: scale(1.05);
     transition: 1s;
+}
+
+.changeNumberStyle:disabled {
+    cursor: not-allowed;
+    color: rgb(150, 150, 150);
+    transform: none;
 }
 
 .buttonAddStyle {
@@ -70,23 +80,20 @@ input[type=number]::-webkit-outer-spin-button {
     min-width: 140px;
     font-family: 'Gruppo';
     cursor: pointer;
-    border: rgb(194, 126, 0) 1px solid;
+    border: rgb(35, 180, 190) 1px solid;
     border-radius: 5px;
     font-weight: 600;
     transition: 0.5s;
-    box-shadow: 0px 0px 14px -7px #f09819;
-    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    box-shadow: 0px 0px 14px -7px rgb(51, 237, 250);
+    background-image: linear-gradient(45deg, rgb(1, 143, 131) 0%, rgb(35, 180, 190)  51%, rgb(42, 140, 197)  100%);
     touch-action: manipulation;
     background-size: 200% auto;
     color: #FFFFFF;
 }
 
 .buttonAddStyle:hover {
-    /* background: linear-gradient(180deg, rgb(194, 126, 0), rgb(100, 79, 2)); */
     color: #FFFFFF;
-    
     background-position: right center;
-    /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
 }

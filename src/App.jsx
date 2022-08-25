@@ -2,14 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from './Containers/ItemListContainer';
-import ItemCount from './Containers/ItemCount';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <ItemListContainer greeting="" />
-      <ItemCount stock={5} initial={1} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <Nav className="navStyle">
             <Container fluid expand={'sm'}>
-                <Row className="rowStyle" X-Small={12}>
+                <Row className="rowStyle">
                     <Col className="asideColumnsStyle">
                         <Nav.Item>
                             <Nav.Link className="navLinkStyle" href="#">About</Nav.Link>
