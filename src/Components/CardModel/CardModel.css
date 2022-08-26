@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sectionBackgroundStyle {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    background: #1D1E22;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.descriptionServiceStyle {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.imageServiceStyle {
+    margin: 1rem;
+    align-self: center;
+    max-width: 60%;
+}
+
+.titleServiceStyle {
+    padding-top: 1rem;
+    align-self: center;
+    font-family: 'Gruppo';
+    color: #00FFFF;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.quoteServiceStyle  {
+    max-width: 60%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-family: 'Gruppo';
+    color: #00FFFF;
+    align-self: center;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+}
+
+.divKeyWordsStyle {
+    display: flex;
+    flex-direction: row;
+    align-self: center; 
+    font-family: 'Gruppo';
+    color: #00FFFF;
+}
+
+.importantKeyWordsStyle {
+    border: 1px solid #cacaca;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 10px;
+    list-style-type: none;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    min-width: 150px;
+}

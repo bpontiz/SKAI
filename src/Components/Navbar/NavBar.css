@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+li {
+    list-style-type: none;
+}
+
 .asideColumnsStyle {
     display: flex;
     flex-direction: row;

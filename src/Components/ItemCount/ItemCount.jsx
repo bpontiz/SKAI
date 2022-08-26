@@ -18,7 +18,7 @@ const ItemCount = ( { stock, initial, onAdd } ) => {
                 <p className="itemQuoteStyle">Service 1 - D.A.C.S.</p>
                 <br />
                 <div>
-                    <button disabled={count <= 0} type="button" className="changeNumberStyle" onClick={decreaseQuantity}>-</button>
+                    <button disabled={count <= 1} type="button" className="changeNumberStyle" onClick={decreaseQuantity}>-</button>
                     <input type="number" className="inputNumberStyle" min="1" max="999" value={count} readOnly />
                     <button disabled={count >= stock} type="button" className="changeNumberStyle" onClick={increaseQuantity}>+</button>
                 </div>
