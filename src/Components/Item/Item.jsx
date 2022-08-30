@@ -1,10 +1,10 @@
 import './Item.css';
 
-const Item = ( { info } ) => {
+const Item = ( { title, image, price } ) => {
     return (
         <div className="divStyle">
-            <img src={info.image} alt="" className="imageStyle" />
-            <p className="titleStyle">{info.title} - $ {info.price} per hour</p>
+            <img src={image} alt="" className="imageStyle" />
+            <p className="titleStyle">{title} - $ {price} per hour</p>
         </div>
     );
 }
