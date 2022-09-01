@@ -2,16 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Greeting from './Components/Greeting/Greeting';
-import CardModel from './Components/CardModel/CardModel';
+import MedicalService from './Components/MedicalService/MedicalService';
 import About from './Components/About/About';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
+AOS.init();
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Greeting greeting="" />
       <About />
-      <CardModel />
+      <MedicalService />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

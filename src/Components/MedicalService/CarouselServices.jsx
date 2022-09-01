@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Carousel from '../../../node_modules/react-bootstrap/Carousel';
+import Carousel from 'react-bootstrap/esm/Carousel';
 import "../../../node_modules/bootstrap/dist/css/bootstrap.css"
 import surgeryImaging from '../../multimedia/surgeryImaging.jpg'
 import medicalMind from '../../multimedia/medicalMind.jpg';
