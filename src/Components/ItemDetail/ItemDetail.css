@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.divStyle {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    color: #424242;
+}
+
+.imageStyle {
+    align-self: flex-start;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.titleStyle {
+    align-self: flex-start;
+    font-family: 'Gruppo';
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.ulStyle {
+    text-align: start;
+    line-height: 3rem;
+    font-family: 'Gruppo';
+    font-weight: 600;
+}
+
+.priceStyle {
+    font-family: 'Gruppo';
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.priceDetail {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.descriptionDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceCartDiv {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.buttonAddStyle {
+    margin: auto;
+    padding: 0.25rem;
+    min-width: 140px;
+    font-family: 'Gruppo';
+    cursor: pointer;
+    border: rgb(35, 180, 190) 1px solid;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.5s;
+    box-shadow: 0px 0px 14px -7px rgb(51, 237, 250);
+    background-image: linear-gradient(45deg, rgb(1, 143, 131) 0%, rgb(35, 180, 190)  51%, rgb(42, 140, 197)  100%);
+    touch-action: manipulation;
+    background-size: 200% auto;
+    color: #FFFFFF;
+}
+
+.buttonAddStyle:hover {
+    color: #FFFFFF;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttonAddStyle:active {
+    transform: scale(0.95);
+}
+
+.buttonAddStyle:disabled {
+    color: rgb(150, 150, 150);
+    background-image: linear-gradient(45deg, #706f6f 0%, #424242  51%, #777777 100%);
+    box-shadow: 0px 0px 14px -7px rgb(110, 110, 110);
+    border: rgb(110, 110, 110) 1px solid;
+    cursor: not-allowed;
+    transform: none;
+}

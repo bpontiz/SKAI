@@ -63,12 +63,3 @@ const MedicalService = () => {
 }
 
 export default MedicalService;
-
-                // <div className="divKeyWordsStyle">
-                //     <li className="importantKeyWordsStyle">RADIOLOGY</li>
-                //     <li className="importantKeyWordsStyle">GAMMA CAMERA</li>
-                // </div>
-                // <div className="divKeyWordsStyle">
-                //     <li className="importantKeyWordsStyle">PET</li>
-                //     <li className="importantKeyWordsStyle">HYBRID SYSTEMS</li>
-                // </div>

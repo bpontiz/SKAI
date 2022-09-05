@@ -46,4 +46,3 @@ function CarouselServices() {
 }
 
 export default CarouselServices;
-// render(<CarouselServices />);

@@ -5,7 +5,8 @@ import Greeting from './Components/Greeting/Greeting';
 import MedicalService from './Components/MedicalService/MedicalService';
 import About from './Components/About/About';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
+import ItemDetailContainer from '../src/Components/ItemDetailContainer/ItemDetailContainer';
 
 AOS.init();
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Greeting greeting="" />
       <About />
       <MedicalService />
+      <ItemDetailContainer />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
