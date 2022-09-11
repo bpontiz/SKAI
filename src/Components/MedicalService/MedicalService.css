@@ -24,6 +24,7 @@
     max-width: 75%;
 }
 
+
 .titleServiceStyle {
     padding-top: 1rem;
     align-self: center;
@@ -66,6 +67,7 @@
     max-width: 100%;
     border-radius: 50%;
     opacity: 1;
+    cursor: pointer;
 }
 
 .imgKeywordsStyle:hover{

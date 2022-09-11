@@ -1,12 +1,32 @@
 import './Item.css';
+import { FaShieldVirus } from 'react-icons/fa';
+import { SiSpeedtest } from 'react-icons/si';
+import { SiHomeassistant } from 'react-icons/si';
+import { MdPrecisionManufacturing } from 'react-icons/md';
+import { IoMdWater } from 'react-icons/io';
 
-const Item = ( { title, image, price } ) => {
+const Item = ( { title, image, price, feature1, feature2, feature3, feature4, feature5 } ) => {
     return (
-        <div className="divStyle">
+        <div className="divStylee">
             <img src={image} alt="" className="imageStyle" />
-            <p className="titleStyle">{title} - $ {price} per hour</p>
+            <div className="descriptionDiv">
+                <p className="titleStyle">{title}</p>
+                <ul className="ulStyle">
+                    <li><MdPrecisionManufacturing /> {feature1}</li>
+                    <li><SiSpeedtest /> {feature2}</li>
+                    <li><SiHomeassistant /> {feature3}</li>
+                    <li><FaShieldVirus /> {feature4}</li>
+                    <li><IoMdWater /> {feature5}</li>
+                </ul>
+            </div>
+            <div className="priceCartDiv">
+                <p className="priceStyle">$ {price}</p>
+                <p className="priceDetail">*price per hour</p>
+                <p className="priceSeeDetail">See details</p>
+                <button className="buttonAddStyle">Add to Cart</button>
+            </div>
         </div>
-    );
+    )
 }
 
 export default Item;

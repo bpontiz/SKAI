@@ -2,6 +2,7 @@ import skai_3 from '../../multimedia/skai_3.png';
 import '../../App.css';
 import './NavBar.css';
 import CartWidget from './CartWidget';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -10,23 +11,23 @@ const NavBar = () => {
                 <div className="rowStyle">
                     <div className="asideColumnsStyle">
                         <li>
-                            <a className="navLinkStyle" href="../../App.jsx">About</a>
+                            <NavLink className="navLinkStyle" to='/'>About</NavLink>
                         </li>
                         <li>
-                            <a className="navLinkStyle" href="../../App.jsx">Services</a>
+                            <NavLink className="navLinkStyle" to="/">Services</NavLink>
                         </li>
                     </div>
                     <div>
                         <li>
-                            <a href="../../App.jsx"><img src={skai_3} style={{maxWidth: "75px", padding: "0.25rem"}} alt="Skai industries logo"/></a>
+                            <NavLink to="/"><img src={skai_3} style={{maxWidth: "75px", padding: "0.25rem"}} alt="Skai industries logo"/></NavLink>
                         </li>
                     </div>
                     <div className="asideColumnsStyle">
                         <li>
-                            <a className="navLinkStyle" href="../../App.jsx">Cart<CartWidget />0</a>
+                            <NavLink className="navLinkStyle" to="/item/:id">Cart<CartWidget />0</NavLink>
                         </li>
                         <li>
-                            <a className="navLinkStyle" href="../../App.jsx">Sign In</a>
+                            <NavLink className="navLinkStyle" to="/">Sign In</NavLink>
                         </li>
                     </div>
                 </div>

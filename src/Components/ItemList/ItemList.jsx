@@ -1,8 +1,9 @@
+import './ItemList.css';
 import Item from '../Item/Item';
 
 const ItemList = ( { data = [] } ) => {
     return (
-        data.map( service => <Item key={service.id} title={service.title} image={service.image} price={service.price} /> )
+        data.map( product => <Item key={product.id} title={product.title} image={product.image} price={product.price} feature1={product.feature1} feature2={product.feature2} feature3={product.feature3} feature4={product.feature4} feature5={product.feature5} /> )
     );
 }
 

@@ -4,18 +4,112 @@
     box-sizing: border-box;
 }
 
-.divStyle {
+.divStylee {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2rem;
+    color: #424242;
+    max-width: 100vw;
 }
 
 .imageStyle {
-    max-width: 200px;
+    align-self: flex-start;
+    min-width: 30%;
+    min-height: 300px;
+    border-radius: 20px;
 }
 
 .titleStyle {
-    align-self: center;
+    text-align: left;
     font-family: 'Gruppo';
     font-weight: 600;
+    font-size: 24px;
+    margin-left: 2rem;
+    margin-right: 1rem;   
+}
+
+.ulStyle {
+    text-align: start;
+    line-height: 3rem;
+    font-family: 'Gruppo';
+    font-weight: 600;
+}
+
+.priceStyle {
+    display: inline;
+    font-family: 'Gruppo';
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.priceDetail {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.priceSeeDetail {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    cursor: pointer;
+    min-height: 25px;
+    justify-self: center;
+}
+
+.priceSeeDetail:hover{
+    transform: translateY(-3px);
+    color: navy;
+    transition: 125ms ease-in-out;
+}
+
+.descriptionDiv {
+    display: inline;
+    min-width: 35%;
+}
+
+.priceCartDiv {
+    justify-self: end;
+    margin: auto;
+    margin-right: 2rem;
+    max-width: 350px;
+}
+
+.buttonAddStyle {
+    margin: auto;
+    padding: 0.25rem;
+    min-width: 140px;
+    font-family: 'Gruppo';
+    cursor: pointer;
+    border: rgb(35, 180, 190) 1px solid;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.5s;
+    box-shadow: 0px 0px 14px -7px rgb(51, 237, 250);
+    background-image: linear-gradient(45deg, rgb(1, 143, 131) 0%, rgb(35, 180, 190)  51%, rgb(42, 140, 197)  100%);
+    touch-action: manipulation;
+    background-size: 200% auto;
+    color: #FFFFFF;
+}
+
+.buttonAddStyle:hover {
+    color: #FFFFFF;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttonAddStyle:active {
+    transform: scale(0.95);
+}
+
+.buttonAddStyle:disabled {
+    color: rgb(150, 150, 150);
+    background-image: linear-gradient(45deg, #706f6f 0%, #424242  51%, #777777 100%);
+    box-shadow: 0px 0px 14px -7px rgb(110, 110, 110);
+    border: rgb(110, 110, 110) 1px solid;
+    cursor: not-allowed;
+    transform: none;
 }

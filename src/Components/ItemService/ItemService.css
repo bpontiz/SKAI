@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.divStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageStyle {
+    max-width: 200px;
+}
+
+.titleStyle {
+    align-self: center;
+    font-family: 'Gruppo';
+    font-weight: 600;
+}
