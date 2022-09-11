@@ -28,6 +28,11 @@
     margin-right: 1rem;   
 }
 
+.titleLinkStyle {
+    text-decoration: none;
+    color: #424242;
+}
+
 .ulStyle {
     text-align: start;
     line-height: 3rem;
@@ -56,6 +61,11 @@
     cursor: pointer;
     min-height: 25px;
     justify-self: center;
+}
+
+.priceSeeDetailLink {
+    text-decoration: none;
+    color: #424242;
 }
 
 .priceSeeDetail:hover{
