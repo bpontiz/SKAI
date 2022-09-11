@@ -4,10 +4,11 @@ import { SiSpeedtest } from 'react-icons/si';
 import { SiHomeassistant } from 'react-icons/si';
 import { MdPrecisionManufacturing } from 'react-icons/md';
 import { IoMdWater } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
-const Item = ( { title, image, price, feature1, feature2, feature3, feature4, feature5 } ) => {
+const Item = ( { id, title, image, price, feature1, feature2, feature3, feature4, feature5 } ) => {
     return (
-        <div className="divStylee">
+        <div className="divStyle">
             <img src={image} alt="" className="imageStyle" />
             <div className="descriptionDiv">
                 <p className="titleStyle">{title}</p>
@@ -22,7 +23,7 @@ const Item = ( { title, image, price, feature1, feature2, feature3, feature4, fe
             <div className="priceCartDiv">
                 <p className="priceStyle">$ {price}</p>
                 <p className="priceDetail">*price per hour</p>
-                <p className="priceSeeDetail">See details</p>
+                <Link to={`/services/${id}`}><p className="priceSeeDetail">See details</p></Link>
                 <button className="buttonAddStyle">Add to Cart</button>
             </div>
         </div>

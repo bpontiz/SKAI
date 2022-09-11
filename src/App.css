@@ -7,8 +7,6 @@
 
 ::-webkit-scrollbar-track {
   background: hsl(325, 0%, 50%);
-  border-radius: 5px;
-  margin-block: .3rem;
 }
 
 ::-webkit-scrollbar-thumb {

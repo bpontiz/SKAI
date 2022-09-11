@@ -19,11 +19,10 @@ function App() {
         <Greeting greeting="" />
         <About />
         <MedicalService />
-        <ItemListContainer />
         <Routes>
-          {/* <Route path="/" element={<ItemListContainer />} />
-          <Route path="/services/:id" element={<ItemListContainer />} /> */}
-          <Route path="/detail/:id" element={<ItemDetailContainer />} />
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/services" element={<ItemListContainer />} />
+          <Route path="/services/:detailId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>

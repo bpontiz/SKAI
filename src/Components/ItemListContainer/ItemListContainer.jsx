@@ -1,6 +1,7 @@
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
 
@@ -13,6 +14,8 @@ const ItemListContainer = () => {
 
     const [data, setData] = useState([]);
 
+    const { detailId } = useParams();
+
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
@@ -21,6 +24,7 @@ const ItemListContainer = () => {
         });
 
         getData.then(res => setData(res));
+
     }, []);
     
     return <>
