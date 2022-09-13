@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../../App.css';
 import './ItemDetailContainer.css';
 import ItemDetail from '../ItemDetail/ItemDetail';
-import ItemCount from '../ItemCount/ItemCount';
 import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
@@ -27,15 +26,10 @@ const ItemDetailContainer = () => {
 
         getData.then(res => setData(res.find(product => product.id === parseInt(detailId))))
 
-    }, []);
-
-    const onAdd = (quantity) => {
-        console.log(`You have bought ${quantity} days of membership.`);
-    }
+    }, [detailId]);
 
     return <>
         <ItemDetail data={data} /> 
-        <ItemCount stock={5} initial={1} onAdd={onAdd} />
     </>
 }
 export default ItemDetailContainer;

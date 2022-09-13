@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sectionFinishStyle {
+    margin-bottom: 2rem;
+}
+
+.pDateStyle {
+    margin: 1.5rem;
+    color: black;
+    font-family: 'Gruppo';
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.linkFinishStyle {
+    text-decoration: none;
+    margin: auto;
+    padding: 0.5rem;
+    min-width: 140px;
+    font-family: 'Gruppo';
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.5s;
+    box-shadow: 0px 0px 14px -7px rgb(194, 126, 0);
+    touch-action: manipulation;
+    background-size: 200% auto;
+    color: #FFFFFF;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    border: rgb(194, 126, 0) 1px solid;
+}
+
+.linkFinishStyle:hover {
+    color: #FFFFFF;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkFinishStyle:active {
+    transform: scale(0.95);
+}
+
+.linkFinishStyle:disabled {
+    color: rgb(150, 150, 150);
+    background-image: linear-gradient(45deg, #706f6f 0%, #424242  51%, #777777 100%);
+    box-shadow: 0px 0px 14px -7px rgb(110, 110, 110);
+    border: rgb(110, 110, 110) 1px solid;
+    cursor: not-allowed;
+    transform: none;
+}
