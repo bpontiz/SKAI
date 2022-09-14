@@ -25,7 +25,7 @@ const ItemListContainer = () => {
 
         getData.then(res => setData(res));
 
-    }, []);
+    }, [detailId]);
     
     return <>
         <ItemList data={data} /> 
