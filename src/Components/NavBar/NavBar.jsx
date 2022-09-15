@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <nav className="navStyle">
-            <section expand={'sm'}>
+            <section>
                 <div className="rowStyle">
                     <div className="asideColumnsStyle">
                         <li>
