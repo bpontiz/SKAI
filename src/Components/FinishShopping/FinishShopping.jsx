@@ -1,7 +1,7 @@
 import './FinishShopping.css';
 import { Link } from 'react-router-dom';
 
-const FinishShopping = ( {quantity} ) => {
+const FinishShopping = () => {
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
     let date = `${today.getMonth()+1}/${dd}/${today.getFullYear()}`;

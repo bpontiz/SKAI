@@ -6,7 +6,9 @@ import { SiHomeassistant } from 'react-icons/si';
 import { MdPrecisionManufacturing } from 'react-icons/md';
 import { IoMdWater } from 'react-icons/io';
 
+
 const ItemService = ( { id, title, image, price, feature1, feature2, feature3, feature4, feature5 } ) => {
+
     return (
         <div className="divStyle">
             <img src={image} alt="" className="imageStyle" />
@@ -24,7 +26,7 @@ const ItemService = ( { id, title, image, price, feature1, feature2, feature3, f
                 <p className="priceStyle">$ {price}</p>
                 <p className="priceDetail">*price per hour</p>
                 <Link to={`/services/${id}`}><p className="priceSeeDetail">See details</p></Link>
-                <button className="buttonAddStyle">Add to Cart</button>
+                <button className="buttonAddStyle">Buy</button>
             </div>
         </div>
     );

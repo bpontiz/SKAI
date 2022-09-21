@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
             setTimeout( () => {
                 resolve(product);
             }, .100);
-        });
+        }, product);
 
         getData.then(res => setData(res.find(product => product.id === parseInt(detailId))))
 

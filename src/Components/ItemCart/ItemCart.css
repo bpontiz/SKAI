@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sectionStyle {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleStyle {
+    margin: 1rem 0 0 2rem;
+    color: #333333;
+    font-weight: 600;
+}
+
+.priceStylee {
+    margin: 0 2rem 0 2rem;
+    font-size: 16px;
+    padding-right: .5rem;
+    text-align: end;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+}
+
+.imgStyle {
+    max-width: 200px;
+    min-height: 200px;
+    box-shadow: 2px 2px 5px #CCCCCC;
+    border-radius: 5px;
+}
+
+.briefDescriptionStyle {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.characteristicsStyle {
+    color: green;
+    text-align: left;
+}
+
+.divStyle {
+    margin: 1rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #EEEEEE;
+}
+
+.infoStyle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.characteristicsStyle {
+    font-size: 13px;
+}
+
+.removeItemStyle {
+    font-size: 13px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+}
+
+.removeItemStyle:hover {
+    color: #333333;
+}
+
+.removeItemStyle:active {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.divSubTotalStyle {
+    margin: 0 2rem 0 2rem;
+    padding-right: .5rem;
+    text-align: end;
+    color: #333333;
+}
+
+.subTotalStyle {
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.linksStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.moreServicesStyle {
+    margin-left: 1rem;
+    font-size: 13px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    color: navy;
+}

@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sectionStyle {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleStyle {
+    margin: 1rem 0 0 2rem;
+    color: #333333;
+}
+
+.priceStylee {
+    margin: 0 2rem 0 2rem;
+    font-size: 16px;
+    padding-right: .5rem;
+    text-align: end;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+}
+
+.totalStyle {
+    margin: 0 2rem 2rem 2rem;
+    padding-right: .5rem;
+    text-align: end;
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
