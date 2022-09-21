@@ -3,8 +3,11 @@ import '../../App.css';
 import './NavBar.css';
 import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
+import { useCartContext } from '../../Context/CartContext/CartContext';
+
 
 const NavBar = () => {
+    const { quantityProducts } = useCartContext();
     return (
         <nav className="navStyle">
             <section>
@@ -24,7 +27,7 @@ const NavBar = () => {
                     </div>
                     <div className="asideColumnsStyle">
                         <li>
-                            <Link className="navLinkStyle" to="/cart">Cart<CartWidget />0</Link>
+                            <Link className="navLinkStyle" to="/cart">Cart<CartWidget />{quantityProducts() || ""}</Link>
                         </li>
                         <li>
                             <Link className="navLinkStyle" to="/">Sign In</Link>
