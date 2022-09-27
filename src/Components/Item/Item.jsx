@@ -5,7 +5,6 @@ import { SiHomeassistant } from 'react-icons/si';
 import { MdPrecisionManufacturing } from 'react-icons/md';
 import { IoMdWater } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import React, {useContext} from 'react';
 
 
 const Item = ( { id, title, image, price, feature1, feature2, feature3, feature4, feature5 } ) => {

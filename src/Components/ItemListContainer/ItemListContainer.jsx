@@ -1,8 +1,8 @@
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import React, { useState, useEffect } from 'react';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
-import products from '../../../src/products.json';
 
 const ItemListContainer = () => {
 
@@ -11,13 +11,10 @@ const ItemListContainer = () => {
     const { detailId } = useParams();
 
     useEffect(() => {
-        const getData = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(products);
-            }, 2000);
-        });
-
-        getData.then(res => setData(res));
+        const queryDataBase = getFirestore();
+        const queryCollection = collection(queryDataBase, 'products');
+        getDocs(queryCollection)
+            .then( result => setData(result.docs.map( product => ({id: product.id, ...product.data()}))));
 
     }, [detailId]);
     
