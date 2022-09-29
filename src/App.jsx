@@ -21,10 +21,17 @@ function App() {
         <CartProvider>
           <NavBar />
           <Greeting greeting="" />
-          <About />
-          <MedicalService />
             <Routes>
-              <Route path="/" element={<ItemListContainer />} />
+              <Route 
+                path="/" 
+                element={
+                  <>
+                    <About />
+                    <MedicalService />
+                    <ItemListContainer />
+                  </>
+                } 
+              />
               <Route path="/services" element={<ItemListContainer />} />
               <Route path="/services/:detailId" element={<ItemDetailContainer />} />
               <Route path="/cart" element={<Cart />} />

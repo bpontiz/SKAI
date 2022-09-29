@@ -20,7 +20,7 @@ const ItemCart = ( {product}) => {
                     <p className="characteristicsStyle">In Stock</p>
                     <div className="linksStyle">
                         <button className="removeItemStyle" onClick={() => removeItem(product.id)}>Delete Product <MdDelete /></button>
-                        <Link to="/"><button className="moreServicesStyle">More Services</button></Link>
+                        <Link to="/services"><button className="moreServicesStyle">More Services</button></Link>
                     </div>
                     
                 </div>
