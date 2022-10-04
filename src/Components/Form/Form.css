@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.orderFormSectionStyle{
+    margin-top: 5rem;
+}
+
+.titleFormStyle {
+    font-family: 'Gruppo';
+    font-size: 28px;
+    color: #1D1E22;
+    font-weight: 600;
+}
+
+.orderFormStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1D1E22;
+}
+
+.orderFormLabelStyle {
+    text-align: left;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 12px;
+    padding: 1rem;
+}
+
+.orderFormInputStyle {
+    padding: 0.2rem;
+    display: block;
+    min-width: 300px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    outline: none;
+}
+
+.divFormStyle {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonFormStyle, .buttonResetFormStyle {
+    display: inline-block;
+    margin: .5rem;
+    padding: 0.25rem;
+    min-width: 140px;
+    font-family: 'Gruppo';
+    cursor: pointer;
+    border: rgb(177, 35, 190) 1px solid;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0px 0px 14px -7px rgb(92, 2, 92);
+    background-image: linear-gradient(45deg, rgb(110, 23, 136) 0%,rgb(226, 10, 255)  51%, rgb(146, 37, 130)  100%);
+    touch-action: manipulation;
+    background-size: 200% auto;
+    color: #FFFFFF;
+}
+
+.buttonResetFormStyle {
+    border: rgb(172, 173, 173) 1px solid;
+    box-shadow: 0px 0px 14px -7px rgb(117, 117, 117);
+    background-image: linear-gradient(45deg, rgb(124, 124, 124) 0%, rgb(218, 218, 218)  51%,rgb(140, 168, 184) 100%);
+    color: #1D1E22;
+}
+
+.buttonFormStyle:hover, .buttonResetFormStyle:hover {
+    color: #FFFFFF;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttonResetFormStyle:hover {
+    color: #1D1E22;
+}
+
+.buttonFormStyle:active, .buttonResetFormStyle:active {
+    transform: scale(0.95);
+}

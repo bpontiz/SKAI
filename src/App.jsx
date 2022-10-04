@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter, Routes , Route } from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar';
 import Greeting from './Components/Greeting/Greeting';
 import MedicalService from './Components/MedicalService/MedicalService';
@@ -8,7 +9,7 @@ import Cart from './Components/Cart/Cart';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Routes , Route } from 'react-router-dom';
+import Form from './Components/Form/Form';
 import React from 'react';
 import CartProvider from './Context/CartContext/CartContext';
 
@@ -34,7 +35,14 @@ function App() {
               />
               <Route path="/services" element={<ItemListContainer />} />
               <Route path="/services/:detailId" element={<ItemDetailContainer />} />
-              <Route path="/cart" element={<Cart />} />
+              <Route 
+                path="/cart"
+                element={
+                  <>
+                    <Cart />
+                    <Form />
+                  </>} 
+              />
             </Routes>
         </CartProvider>
       </BrowserRouter>
