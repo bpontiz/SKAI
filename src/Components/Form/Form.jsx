@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import './Form.css';
-import { addDoc, getFirestore, collection } from 'firebase/firestore';
 import { useCartContext } from '../../Context/CartContext/CartContext';
+import { addDoc, getFirestore, collection } from 'firebase/firestore';
+import Swal from 'sweetalert2';
+import './Form.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
-    const { cart, subTotal }  = useCartContext();
-    const { getDate } = useCartContext();
+    const { cart, subTotal, getDate }  = useCartContext();
     const [name, setName] = useState("");
     const [lastname, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -13,32 +15,118 @@ const Form = () => {
 
     const order = {
         buyer: {
-            name: name,
-            lastname: lastname,
             email: email,
+            lastname: lastname,
+            name: name,
             phone: phone
         },
+        date: getDate(),
         product: cart.map( item => 
             ({ id: item.id, title: item.title, price: item.price, quantity: item.quantity})),
-        date: getDate(),
         total: subTotal().toFixed(2)
     };
 
     const handleBuyer = (e) => {
         e.preventDefault();
-        setName(name);
-        setLastName(lastname);
-        setEmail(email);
-        setPhone(phone);
-        console.log(order);
-        return handlePost();
+        switch (true){
+            case name === "":
+                toast.error('Please enter name.', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                    });
+                break;
+            case lastname === "":
+                
+                toast.error('Please enter lastname.', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
+                break;
+            case email === "":
+                toast.error('Please enter email.', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
+                break;
+            case phone === "":
+                toast.error('Please enter phone.', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    });
+                break;
+            default: showAlert();
+        }
+    };
+
+    function showAlert() {
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+                confirmButton: 'btn btn-success',
+                cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false
+        });
+
+        swalWithBootstrapButtons.fire({
+            title: 'Confirm order',
+            text: 'Please click on one button.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, order',
+            cancelButtonText: 'No, cancel',
+            reverseButtons: true
+        })
+        .then((result) => {
+            if (result.isConfirmed) {
+                swalWithBootstrapButtons.fire(
+                    'Confirmed',
+                    'Your product will be available soon.',
+                    'success'
+                );
+                setName(name);
+                setLastName(lastname);
+                setEmail(email);
+                setPhone(phone);
+                console.log(order);
+                // return handlePost();
+            }else if(
+              /* Read more about handling dismissals below */
+                result.dismiss === Swal.DismissReason.cancel
+            ){
+                swalWithBootstrapButtons.fire(
+                    'Cancelled',
+                    'You did not confirm your order.',
+                    'error'
+                )
+            }
+        })
     };
 
     const handlePost = () => {
         const dataBase = getFirestore();
         const orderCollection = collection(dataBase, 'orders');
         addDoc(orderCollection, order)
-        .then( ({id}) => console.log(`Order id: ${id}`) )
+        .then( ({id}) => console.log(`Database POST confirmed. Order id: ${id}`) )
     };
     
     const handleReset = (e) => {
@@ -102,8 +190,9 @@ const Form = () => {
                 </button>
                 <button className="buttonFormStyle" onClick={handleBuyer}>Order</button>
             </div>
+            <ToastContainer />
         </form>
     </>
-};
+}; 
 
 export default Form;

@@ -12,6 +12,8 @@ import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailCont
 import Form from './Components/Form/Form';
 import React from 'react';
 import CartProvider from './Context/CartContext/CartContext';
+import Footer from './Components/Footer/Footer';
+
 
 AOS.init();
 
@@ -30,19 +32,39 @@ function App() {
                     <About />
                     <MedicalService />
                     <ItemListContainer />
+                    <Footer />
                   </>
                 } 
               />
-              <Route path="/services" element={<ItemListContainer />} />
-              <Route path="/services/:detailId" element={<ItemDetailContainer />} />
+              <Route 
+                path="/services" 
+                element={
+                  <>
+                    <ItemListContainer />
+                    <Footer />
+                  </>
+                } 
+              />
+              <Route 
+                path="/services/:detailId" 
+                element={
+                  <>
+                    <ItemDetailContainer />
+                    <Footer />
+                  </>
+                }
+              />
               <Route 
                 path="/cart"
                 element={
                   <>
                     <Cart />
                     <Form />
-                  </>} 
+                    <Footer />
+                  </>
+                } 
               />
+              <Route path="/contact" element={<Footer />} />
             </Routes>
         </CartProvider>
       </BrowserRouter>
