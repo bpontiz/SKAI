@@ -81,15 +81,10 @@
     cursor: pointer;
 }
 
-.hiddenDescriptionStyle {
-    display: none;
-}
-
-.topicKeywordsStyle:hover + .hiddenDescriptionStyle {
+.topicKeywordsStyle:hover {
     display: block;
     transition: 1000ms;
     text-align: center;
-    border: 1px #00FFFF solid;
 }
 
 /* .divKeyWordsStyle {

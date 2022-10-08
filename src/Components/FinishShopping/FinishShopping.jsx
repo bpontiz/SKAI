@@ -9,7 +9,6 @@ const FinishShopping = () => {
     return (
         <section className="sectionFinishStyle">
             <p className="pDateStyle">Today is {date}</p>
-            <p className="pDateStyle">Service days selected: XXXX</p>
             <Link to='/cart' className="linkFinishStyle">Finish shopping</Link>
         </section>  
     )

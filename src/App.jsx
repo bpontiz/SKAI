@@ -9,7 +9,6 @@ import Cart from './Components/Cart/Cart';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
-import Form from './Components/Form/Form';
 import React from 'react';
 import CartProvider from './Context/CartContext/CartContext';
 import Footer from './Components/Footer/Footer';
@@ -59,7 +58,6 @@ function App() {
                 element={
                   <>
                     <Cart />
-                    <Form />
                     <Footer />
                   </>
                 } 

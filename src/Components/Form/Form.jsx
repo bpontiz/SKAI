@@ -108,7 +108,7 @@ const Form = () => {
                 setEmail(email);
                 setPhone(phone);
                 console.log(order);
-                // return handlePost();
+                return handlePost();
             }else if(
               /* Read more about handling dismissals below */
                 result.dismiss === Swal.DismissReason.cancel
@@ -129,7 +129,7 @@ const Form = () => {
         .then( ({id}) => console.log(`Database POST confirmed. Order id: ${id}`) )
     };
     
-    const handleReset = (e) => {
+    const handleReset = () => {
         setName("");
         setLastName("");
         setEmail("");

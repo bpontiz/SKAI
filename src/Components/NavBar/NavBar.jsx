@@ -27,7 +27,7 @@ const NavBar = () => {
                     </div>
                     <div className="asideColumnsStyle">
                         <li>
-                            <Link className="navLinkStyle" to="/cart">Cart<CartWidget />{quantityProducts() || ""}</Link>
+                            <Link className="navLinkStyle" to="/cart">Cart<CartWidget />{quantityProducts() || "0"}</Link>
                         </li>
                         <li>
                             <Link className="navLinkStyle" to="/contact">Contact</Link>

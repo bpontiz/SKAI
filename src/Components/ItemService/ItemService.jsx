@@ -24,8 +24,8 @@ const ItemService = ( { id, title, image, price, feature1, feature2, feature3, f
             </div>
             <div className="priceCartDiv">
                 <p className="priceStyle">$ {price}</p>
-                <p className="priceDetail">*price per hour</p>
-                <Link to={`/services/${id}`}><p className="priceSeeDetail">See details</p></Link>
+                <p className="priceDetail">*price per day</p>
+                <p className="seeDetailStyle"><Link to={`/services/${id}`} className="linkSeeDetailsStyle">See details</Link></p>
                 <button className="buttonAddStyle">Buy</button>
             </div>
         </div>
