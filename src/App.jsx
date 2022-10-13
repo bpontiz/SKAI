@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter, Routes , Route } from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar';
 import Greeting from './Components/Greeting/Greeting';
 import MedicalService from './Components/MedicalService/MedicalService';
@@ -8,9 +9,10 @@ import Cart from './Components/Cart/Cart';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Routes , Route } from 'react-router-dom';
 import React from 'react';
 import CartProvider from './Context/CartContext/CartContext';
+import Footer from './Components/Footer/Footer';
+
 
 AOS.init();
 
@@ -29,12 +31,38 @@ function App() {
                     <About />
                     <MedicalService />
                     <ItemListContainer />
+                    <Footer />
                   </>
                 } 
               />
-              <Route path="/services" element={<ItemListContainer />} />
-              <Route path="/services/:detailId" element={<ItemDetailContainer />} />
-              <Route path="/cart" element={<Cart />} />
+              <Route 
+                path="/services" 
+                element={
+                  <>
+                    <ItemListContainer />
+                    <Footer />
+                  </>
+                } 
+              />
+              <Route 
+                path="/services/:detailId" 
+                element={
+                  <>
+                    <ItemDetailContainer />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route 
+                path="/cart"
+                element={
+                  <>
+                    <Cart />
+                    <Footer />
+                  </>
+                } 
+              />
+              <Route path="/contact" element={<Footer />} />
             </Routes>
         </CartProvider>
       </BrowserRouter>

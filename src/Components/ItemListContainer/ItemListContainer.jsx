@@ -19,7 +19,7 @@ const ItemListContainer = () => {
     }, [detailId]);
     
     return <>
-        <ItemList data={data} /> 
+        <ItemList data={data} data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" /> 
     </>
 } 
 

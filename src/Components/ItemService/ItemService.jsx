@@ -1,5 +1,4 @@
 import './ItemService.css';
-import { Link } from 'react-router-dom';
 import { FaShieldVirus } from 'react-icons/fa';
 import { SiSpeedtest } from 'react-icons/si';
 import { SiHomeassistant } from 'react-icons/si';
@@ -24,9 +23,7 @@ const ItemService = ( { id, title, image, price, feature1, feature2, feature3, f
             </div>
             <div className="priceCartDiv">
                 <p className="priceStyle">$ {price}</p>
-                <p className="priceDetail">*price per hour</p>
-                <Link to={`/services/${id}`}><p className="priceSeeDetail">See details</p></Link>
-                <button className="buttonAddStyle">Buy</button>
+                <p className="priceDetail">*price per day</p>
             </div>
         </div>
     );

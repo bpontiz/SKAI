@@ -15,11 +15,11 @@ const ItemCount = ( { stock, initial, onAdd } ) => {
     return (
         <section className="sectionItemCountStyle">
             <div className="divItemCountStyle">
-                <p className="itemQuoteStyle">Service 1 - D.A.C.S.</p>
-                <br />
+                <p className="itemQuoteStyle">Medical Service</p>
                 <div>
+                    <p className="itemQuoteStyle">Days of service</p>
                     <button disabled={count <= 1} type="button" className="changeNumberStyle" onClick={decreaseQuantity}>-</button>
-                    <input type="number" className="inputNumberStyle" min="1" max="999" value={count} readOnly />
+                    <input type="number" className="inputNumberStyle" min="1" max="999" value={count} />
                     <button disabled={count >= stock} type="button" className="changeNumberStyle" onClick={increaseQuantity}>+</button>
                 </div>
                 <br />

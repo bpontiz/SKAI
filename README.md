@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# SKAI Consultoring
+## Description
+***
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SKAI is an unreal ecommerce for consultoring and advisory of different topics related to the field of medicine. Services are not provided by people, but **Artificial Intelligences**.
 
-## Available Scripts
+## Services
+***
 
-In the project directory, you can run:
+Most of the services that SKAI has developed, come with specific perks to be used in different scenarios, such as: 
+- Diagnostic and radiological procedures, gamma cameras and PET analysis.
+- Surgical interventions.
+- A day in life, caring for a family member or friend. Domestic TODO's and more.
 
-### `npm start`
+SKAI teams work every day to create and improve these services. They are made of hardware and software, representing the most advanced side of robots.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Links
+***
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Remote repository**: [https://github.com/bpontiz/SKAI.git]
 
-### `npm test`
+**Deploy with Vercel**: [https://skai-bpontiz.vercel.app]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+***
 
-### `npm run build`
+You are free to clone this repository and take a look!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+One way to begin would be to write the following in your IDE command prompt:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/bpontiz/SKAI.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+***
 
-### `npm run eject`
+Certainly you would need to install **Node js** to run this project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can easily run a development server through Node to execute SKAI, using Node Package Manager or *npm* as follows:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project status
+***
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+SKAI is being improved day by day keeping open development phase. If you have any questions on this project, please feel free to contact me on my GitHub profile: [https://github.com/bpontiz]
 
-## Learn More
+## Authors and acknowledgment
+***
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This React project was developed by Pontiz, Bruno. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I sincerely want to thank professor Blanco, Felix and my tutor Juaneda, Felipe.

@@ -3,3 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.divStyle {
+    margin-bottom: 1rem;
+}
+
+.seeDetailStyle {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    cursor: pointer;
+    min-height: 25px;
+    justify-self: center;
+}
+
+.seeDetailStyle:hover{
+    transform: translateY(-3px);
+    color: navy;
+    transition: 125ms ease-in-out;
+}
+
+.linkSeeDetailsStyle {
+    text-decoration: none;
+    color: #424242;
+}

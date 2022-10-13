@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.divEmptyCartStyle {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 .sectionStyle {
     display: flex;
     flex-direction: column;
@@ -30,4 +38,53 @@
     color: #333333;
     font-size: 18px;
     font-family: 'Roboto';
+}
+
+.linkGoShippingStyle {
+    text-decoration: none;
+}
+
+.emptyCartImageStyle {
+    align-self: center;
+    max-width: 400px;
+}
+
+.emptyCartMessageStyle {
+    padding: .25rem;
+    font-family: 'Roboto';
+    color: #555555;
+    max-width: 400px;
+    align-self: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.linkGoShippingStyle {
+    margin: .5rem;
+    padding: 0.25rem;
+    min-width: 140px;
+    align-self: center;
+    font-family: 'Gruppo';
+    cursor: pointer;
+    border: rgb(54, 174, 243) 1px solid;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0px 0px 14px -7px rgb(2, 8, 92);
+    background-image: linear-gradient(45deg, rgb(4, 12, 128) 0%,rgb(1, 84, 161) 51%, rgb(32, 59, 136)
+    100%);
+    touch-action: manipulation;
+    background-size: 200% auto;
+    color: #FFFFFF;
+}
+
+.linkGoShippingStyle:hover {
+    color: #FFFFFF;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkGoShippingStyle:active {
+    scale: 0.95;
 }

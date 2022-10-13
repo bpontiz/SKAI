@@ -20,7 +20,7 @@
 .linkFinishStyle {
     text-decoration: none;
     margin: auto;
-    padding: 0.5rem;
+    padding: 0.25rem;
     min-width: 140px;
     font-family: 'Gruppo';
     cursor: pointer;
@@ -53,4 +53,35 @@
     border: rgb(110, 110, 110) 1px solid;
     cursor: not-allowed;
     transform: none;
+}
+
+.linkAddMoreStyle {
+    text-decoration: none;
+    margin: auto;
+    margin-left: 1rem;
+    padding: 0.25rem;
+    min-width: 140px;
+    font-family: 'Gruppo';
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.5s;
+    box-shadow: 0px 0px 14px -7px rgb(2, 8, 92);
+    touch-action: manipulation;
+    background-size: 200% auto;
+    color: #FFFFFF;
+    background-image: linear-gradient(45deg, rgb(4, 12, 128) 0%,rgb(1, 84, 161) 51%, rgb(32, 59, 136)
+    100%);
+    border: rgb(54, 174, 243) 1px solid;
+}
+
+.linkAddMoreStyle:hover {
+    color: #FFFFFF;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkAddMoreStyle:active {
+    scale: 0.95;
 }

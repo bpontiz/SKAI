@@ -20,8 +20,7 @@ const MedicalService = () => {
                             src={brainPetOptimized} 
                             alt="Brain PET" 
                         />
-                        <p className="topicKeywordsStyle">PET<br />More Info ↴</p>
-                        <p className="hiddenDescriptionStyle">BUY</p>
+                        <p className="topicKeywordsStyle">PET</p>
                     </li>
                     <li className="liKeyWordsStyle">
                         <img
@@ -29,8 +28,7 @@ const MedicalService = () => {
                             src={surgeryKnifeOptimized} 
                             alt="Surgery Knife" 
                         />
-                        <p className="topicKeywordsStyle">SURGERY<br />More Info ↴</p>
-                        <p className="hiddenDescriptionStyle"></p>
+                        <p className="topicKeywordsStyle">SURGERY</p>
                     </li>
                     <li className="liKeyWordsStyle">
                         <img
@@ -38,8 +36,7 @@ const MedicalService = () => {
                             src={thoraxXRayOptimized} 
                             alt="Thorax X Ray" 
                         />
-                        <p className="topicKeywordsStyle">RADIOLOGY<br />More Info ↴</p>
-                        <p className="hiddenDescriptionStyle"></p>
+                        <p className="topicKeywordsStyle">RADIOLOGY</p>
                     </li>
                     <li className="liKeyWordsStyle">
                         <img
@@ -47,11 +44,32 @@ const MedicalService = () => {
                             src={medicalAIOptimized} 
                             alt="Hybrid System" 
                         />
-                        <p className="topicKeywordsStyle">HYBRID SYSTEMS<br />More Info ↴</p>
-                        <p className="hiddenDescriptionStyle"></p>
+                        <p className="topicKeywordsStyle">HYBRID SYSTEMS</p>
                     </li>
                 </div>
-                <p className="quoteServiceStyle">Diagnostic And Consultancy System or D.A.C.S. provides you advisory about medical and health field queries. Inner technologies were built to apply computer science and algorithms to discover pathological cell growth in diagnostic and nuclear medicine images.</p>
+                <div className="divKeyWordsStyle">
+                    <li className="liKeyWordsStyle">
+                        <p className="quoteServiceStyle">
+                            PET is a powerful tool created to be used in any hospital or clinic with diagnostic service.
+                        </p>
+                    </li>
+                    <li className="liKeyWordsStyle">
+                        <p className="quoteServiceStyle">
+                            AI applied in this field is more than necessary. It will work simultaneously with the surgeon to perform at maximum precision.
+                        </p>
+                    </li>
+                    <li className="liKeyWordsStyle">
+                        <p className="quoteServiceStyle">
+                            Radiology unit uses its radiation shielding to help people get inside x-ray camera and follow doctor's procedure.
+                        </p>
+                    </li>
+                    <li className="liKeyWordsStyle">
+                        <p className="quoteServiceStyle">
+                            A domestic robot with wide field application. It takes care of family and is capable of cooking.
+                        </p>
+                    </li>
+                </div>
+                {/* <p className="quoteServiceStyle">Diagnostic And Consultancy System or D.A.C.S. provides you advisory about medical and health field queries. Inner technologies were built to apply computer science and algorithms to discover pathological cell growth in diagnostic and nuclear medicine images.</p> */}
                 
             </div>
             

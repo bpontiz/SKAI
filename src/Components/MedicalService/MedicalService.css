@@ -21,7 +21,7 @@
 .imageServiceStyle {
     margin: 1rem;
     align-self: center;
-    max-width: 75%;
+    max-width: 85%;
 }
 
 
@@ -36,16 +36,15 @@
 }
 
 .quoteServiceStyle  {
-    max-width: 75%;
-    margin-top: 5rem;
-    padding-bottom: 3rem;
     font-family: 'Gruppo';
     color: #00FFFF;
     align-self: center;
     text-align: justify;
-    letter-spacing: 1px;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    text-justify: distribute;
+    hyphens: auto;
+    font-size: 16px;
+    word-spacing: -0.05rem;
+    min-height: 250px;
 }
 
 .divKeyWordsStyle {
@@ -53,7 +52,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .liKeyWordsStyle {
@@ -81,32 +80,8 @@
     cursor: pointer;
 }
 
-.hiddenDescriptionStyle {
-    display: none;
-}
-
-.topicKeywordsStyle:hover + .hiddenDescriptionStyle {
+.topicKeywordsStyle:hover {
     display: block;
     transition: 1000ms;
     text-align: center;
-    border: 1px #00FFFF solid;
 }
-
-/* .divKeyWordsStyle {
-    display: flex;
-    flex-direction: row;
-    align-self: center; 
-    font-family: 'Gruppo';
-    color: #00FFFF;
-}
-
-.importantKeyWordsStyle {
-    border: 1px solid #cacaca;
-    padding: .5rem;
-    margin: .5rem;
-    border-radius: 10px;
-    list-style-type: none;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    min-width: 150px;
-} */

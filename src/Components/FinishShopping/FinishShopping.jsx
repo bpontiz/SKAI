@@ -9,8 +9,8 @@ const FinishShopping = () => {
     return (
         <section className="sectionFinishStyle">
             <p className="pDateStyle">Today is {date}</p>
-            <p className="pDateStyle">Service days selected: XXXX</p>
-            <Link to='/cart' className="linkFinishStyle">Finish shopping</Link>
+            <Link to='/cart'><button className="linkFinishStyle">Finish shopping</button></Link>
+            <Link to='/services'><button className="linkAddMoreStyle">Add more</button></Link>
         </section>  
     )
 }
