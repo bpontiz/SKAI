@@ -22,7 +22,6 @@ const ItemCart = ( {product}) => {
                         <button className="removeItemStyle" onClick={() => removeItem(product.id)}>Delete Product <MdDelete /></button>
                         <Link to="/services"><button className="moreServicesStyle">More Services</button></Link>
                     </div>
-                    
                 </div>
             </div>
             <div className="divSubTotalStyle">{itemWord}</div>

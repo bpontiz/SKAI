@@ -11,11 +11,11 @@ const Cart = () => {
     if (cart.length === 0){
         return (
             <>
-            <div className="divEmptyCartStyle">
-                <img src={emptyCart} alt="empty cart" className="emptyCartImageStyle"/>
-                <p className="emptyCartMessageStyle">Your SKAI cart is empty.</p>
-                <Link to="/services" className="linkGoShippingStyle">Go Shopping</Link>
-            </div>                
+                <div className="divEmptyCartStyle">
+                    <img src={emptyCart} alt="empty cart" className="emptyCartImageStyle"/>
+                    <p className="emptyCartMessageStyle">Your SKAI cart is empty.</p>
+                    <Link to="/services" className="linkGoShippingStyle">Go Shopping</Link>
+                </div>                
             </>
         );
     };

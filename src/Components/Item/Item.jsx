@@ -9,6 +9,7 @@ import AOS from 'aos';
 
 AOS.init();
 const Item = ( { id, title, image, price, feature1, feature2, feature3, feature4, feature5 } ) => {
+
     return (
         <div className="divStyle" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <img src={image} alt="service" className="imageStyle" to={`/services/${id}`}/>
@@ -26,7 +27,7 @@ const Item = ( { id, title, image, price, feature1, feature2, feature3, feature4
                 <p className="priceStyle">$ {price}</p>
                 <p className="priceDetail">*price per day</p>
                 <Link to={`/services/${id}`} className="priceSeeDetailLink"><p className="priceSeeDetail">See details</p></Link>
-                <button className="buttonAddStyle">Add to Cart</button>
+                <Link to={`/services/${id}`}><button className="buttonAddStyle">Add to Cart</button></Link>
             </div>
         </div>
     )
