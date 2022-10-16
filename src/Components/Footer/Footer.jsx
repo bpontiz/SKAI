@@ -1,9 +1,8 @@
 import './Footer.css';
-import UseAnimations from 'react-useanimations';
-import github from 'react-useanimations/lib/github';
-import linkedin from 'react-useanimations/lib/linkedin';
-import instagram from 'react-useanimations/lib/instagram';
-import facebook from 'react-useanimations/lib/facebook';
+import { BsInstagram } from 'react-icons/bs';
+import { TbBrandMeta } from 'react-icons/tb';
+import { FiLinkedin } from 'react-icons/fi';
+import { FiGithub } from 'react-icons/fi';
 
 const Footer = () => {
     return <>
@@ -26,34 +25,13 @@ const Footer = () => {
                 <div className="divUlFooterStyle">
                     <p className="subtitleFooterStyle">GATES</p>
                     <div className="divIconFooterStyle">
-                        <UseAnimations
-                            animation={facebook} 
-                            strokeColor="white" 
-                            loop={true} 
-                            autoplay={true}
-                        />
-                        <li className="liFooterStyle">Facebook</li></div>
+                        <li className="liFooterStyle"><TbBrandMeta /> Meta</li></div>
                     <div className="divIconFooterStyle">
-                        <UseAnimations 
-                            animation={linkedin} 
-                            strokeColor="white" 
-                            loop={true} 
-                            autoplay={true}/>
-                        <li className="liFooterStyle">LinkedIn</li></div>
+                        <li className="liFooterStyle"><FiLinkedin /> LinkedIn</li></div>
                     <div className="divIconFooterStyle">
-                        <UseAnimations 
-                            animation={instagram} 
-                            strokeColor="white" 
-                            loop={false} 
-                            autoplay={true}/>
-                        <li className="liFooterStyle">Instagram</li></div>
+                        <li className="liFooterStyle"><BsInstagram /> Instagram</li></div>
                     <div className="divIconFooterStyle">
-                        <UseAnimations 
-                            animation={github} 
-                            strokeColor="white" 
-                            loop={true} 
-                            autoplay={true}/>
-                        <li className="liFooterStyle">Github</li>
+                        <li className="liFooterStyle"><FiGithub /> Github</li>
                     </div>
                 </div>
             </div>
