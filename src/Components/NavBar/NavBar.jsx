@@ -5,7 +5,6 @@ import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../Context/CartContext/CartContext';
 
-
 const NavBar = () => {
     const { quantityProducts } = useCartContext();
     return (

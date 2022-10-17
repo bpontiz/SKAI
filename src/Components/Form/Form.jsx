@@ -22,57 +22,33 @@ const Form = () => {
         },
         date: getDate(),
         product: cart.map( item => 
-            ({ id: item.id, title: item.title, price: item.price, quantity: item.quantity})),
+            ({ id: item.id, title: item.title, price: item.price, quantity: item.quantity, category: item.category})),
         total: subTotal().toFixed(2)
     };
 
     const handleBuyer = (e) => {
         e.preventDefault();
+        const toastAttributes = {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined
+        };
         switch (true){
             case name === "":
-                toast.error('Please enter name.', {
-                    position: "top-center",
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined
-                    });
+                toast.error('Please enter name.', toastAttributes);
                 break;
             case lastname === "":
-                
-                toast.error('Please enter lastname.', {
-                    position: "top-center",
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    });
+                toast.error('Please enter lastname.', toastAttributes);
                 break;
             case email === "":
-                toast.error('Please enter email.', {
-                    position: "top-center",
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    });
+                toast.error('Please enter email.', toastAttributes);
                 break;
             case phone === "":
-                toast.error('Please enter phone.', {
-                    position: "top-center",
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    });
+                toast.error('Please enter phone.', toastAttributes);
                 break;
             default: showAlert();
         }
@@ -125,7 +101,14 @@ const Form = () => {
         const dataBase = getFirestore();
         const orderCollection = collection(dataBase, 'orders');
         addDoc(orderCollection, order)
-        .then( ({id}) => console.log(`Database POST confirmed. Order id: ${id}`) )
+        .then( ({id}) => {
+            Swal.fire({
+                position: 'center',
+                icon: 'info',
+                title: `Please save your order id: ${id}`,
+            });
+            console.log(`ORDER id is: ${id}`);
+        }); 
     };
     
     const handleReset = () => {

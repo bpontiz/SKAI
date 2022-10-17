@@ -3,3 +3,47 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.pCategoryStyle {
+    font-family: 'Gruppo';
+    font-size: 18px;
+    font-weight: 600;
+    color:black;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #CCCCCC;
+}
+
+.sectionCategoryStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.linkCategoryStyle {
+    text-decoration: none;
+}
+
+.divCategoryStyle{
+    min-width: 100px;
+    border: 1px solid #CCCCCC;
+    padding: .5rem;
+    color: blueviolet;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.divCategoryStyle:hover{
+    background-color: blueviolet;
+    color: #FFFFFF;
+}
+
+.divCategoryStyle:active{
+    transform: scale(0.95);
+    background-color: #FFFFFF;
+    color: blueviolet;
+}

@@ -16,6 +16,7 @@
 }
 
 li {
+    min-width: 75px;
     list-style-type: none;
 }
 

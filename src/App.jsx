@@ -40,7 +40,14 @@ function App() {
                 element={
                   <>
                     <ItemListContainer />
-                    <Footer />
+                  </>
+                } 
+              />
+              <Route 
+                path="/category/:categoryId" 
+                element={
+                  <>
+                    <ItemListContainer />
                   </>
                 } 
               />
