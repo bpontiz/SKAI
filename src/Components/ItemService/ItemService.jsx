@@ -10,20 +10,20 @@ const ItemService = ( { id, title, image, price, feature1, feature2, feature3, f
 
     return (
         <div className="divStyle">
-            <img src={image} alt="" className="imageStyle" />
+            <img src={image} alt="" className="imageDetailStyle" />
             <div className="descriptionDiv">
                 <p className="titleStyle">{title}</p>
                 <ul className="ulStyle">
-                    <li><MdPrecisionManufacturing /> {feature1}</li>
-                    <li><SiSpeedtest /> {feature2}</li>
-                    <li><SiHomeassistant /> {feature3}</li>
-                    <li><FaShieldVirus /> {feature4}</li>
-                    <li><IoMdWater /> {feature5}</li>
+                    <li className="liDetailStyle"><MdPrecisionManufacturing /> {feature1}</li>
+                    <li className="liDetailStyle"><SiSpeedtest /> {feature2}</li>
+                    <li className="liDetailStyle"><SiHomeassistant /> {feature3}</li>
+                    <li className="liDetailStyle"><FaShieldVirus /> {feature4}</li>
+                    <li className="liDetailStyle"><IoMdWater /> {feature5}</li>
                 </ul>
             </div>
-            <div className="priceCartDiv">
-                <p className="priceStyle">$ {price}</p>
-                <p className="priceDetail">*price per day</p>
+            <div className="priceDetailCartDiv">
+                <p className="priceDetailStyle">$ {price}</p>
+                <p className="pricePerDayDetailStyle">*price per day</p>
             </div>
         </div>
     );

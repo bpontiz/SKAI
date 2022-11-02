@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.navStyle {
+.navBarStyle {
     max-width: 100vw;
 }
 
@@ -13,6 +13,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.imgNavbarSkai {
+    max-width: 100px;
+    padding: 0.25rem;
 }
 
 li {
@@ -44,4 +49,20 @@ li {
 .navLinkStyle:hover {
     border-bottom: 2px solid rgb(88, 88, 88);
     border-radius: 3px;
+}
+
+/* responsive design */
+@media (max-width: 500px) {
+    li {
+        min-width: 30px;
+    }
+
+    .navLinkStyle {
+        font-size: 10px;
+    }
+
+    .imgNavbarSkai {
+        max-width: 60px;
+        padding: 0.25rem;
+    }
 }

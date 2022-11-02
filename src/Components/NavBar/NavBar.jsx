@@ -8,8 +8,8 @@ import { useCartContext } from '../../Context/CartContext/CartContext';
 const NavBar = () => {
     const { quantityProducts } = useCartContext();
     return (
-        <nav className="navStyle">
-            <section>
+        <nav className="navBarStyle">
+            <section className="sectionNavbarStyle">
                 <div className="rowStyle">
                     <div className="asideColumnsStyle">
                         <li>
@@ -21,7 +21,7 @@ const NavBar = () => {
                     </div>
                     <div>
                         <li>
-                            <Link to="/"><img src={skai_3} style={{maxWidth: "75px", padding: "0.25rem"}} alt="Skai industries logo"/></Link>
+                            <Link to="/"><img src={skai_3}  alt="Skai industries logo" className="imgNavbarSkai"/></Link>
                         </li>
                     </div>
                     <div className="asideColumnsStyle">

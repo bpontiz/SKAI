@@ -69,8 +69,6 @@ const MedicalService = () => {
                         </p>
                     </li>
                 </div>
-                {/* <p className="quoteServiceStyle">Diagnostic And Consultancy System or D.A.C.S. provides you advisory about medical and health field queries. Inner technologies were built to apply computer science and algorithms to discover pathological cell growth in diagnostic and nuclear medicine images.</p> */}
-                
             </div>
             
             <div className="imageServiceStyle">
