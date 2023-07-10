@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Cart.css';
 import { useCartContext } from '../../Context/CartContext/CartContext';
 import { Link } from 'react-router-dom';
@@ -7,6 +8,10 @@ import Form from '../Form/Form';
 
 const Cart = () => {
     const { cart, subTotal }  = useCartContext();
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
 
     if (cart.length === 0){
         return (
